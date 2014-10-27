@@ -11,7 +11,8 @@
 angular
   .module('estimatePiApp', [
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'components'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -27,3 +28,4 @@ angular
         redirectTo: '/'
       });
   });
+angular.module('components', []);
