@@ -4,8 +4,8 @@ var app = express(),
     io = require('socket.io')(http),
     path = require('path');
 
-app.use(express.static(__dirname + ' /../frontend/dist'));
-console.log(__dirname + '../');
+app.use(express.static(path.join(__dirname, '../frontend')));
+console.log(path.join(__dirname, '../frontend', 'index.html'));
 //app.get('/', function (req, res) {
 //    res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
 //});
