@@ -77,3 +77,24 @@ body {
     border-bottom: 0;
   }
 }
+#headerwrap {
+	background: url(../images/face2.jpg) no-repeat center top;
+	margin-top: 60px;
+	padding-top:140px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+    color: white;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
