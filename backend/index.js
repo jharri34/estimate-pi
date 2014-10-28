@@ -4,11 +4,11 @@ var app = express(),
     io = require('socket.io')(http),
     path = require('path');
 
-app.use(express.static(path.join(__dirname, '../frontend')));
-console.log(path.join(__dirname, '../frontend', 'index.html'));
-//app.get('/', function (req, res) {
-//    res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
-//});
+app.use(express.static(path.join(__dirname, '../frontend/app')));
+console.log(path.join(__dirname, '../frontend/app/', 'index.html'));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '../frontend/app/', 'index.html'));
+});
 
 io.on('connection', function (socket) {
     console.log("connected");

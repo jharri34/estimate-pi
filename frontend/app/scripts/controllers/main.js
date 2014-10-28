@@ -17,22 +17,22 @@ angular.module('estimatePiApp')
         console.log($scope.userInput);
         $scope.submit = function () {
             if ($scope.text) {
+                socket.emit('begin-approximation', $scope.text);
                 console.log($scope.text);
                 $scope.text = '';
             }
         };
 
-        //        socket.emit('begin-approximation', $scope.userInput);
-        //
-        //        socket.on('estimate', function (data) {
-        //            console.log(data);
-        //        });
-        //        socket.on('expected_value', function (data) {
-        //            console.log(data);
-        //        });
-        //        socket.on('stardard_deviation', function (data) {
-        //            console.log(data);
-        //        });
+        
+                socket.on('estimate', function (data) {
+                    console.log(data);
+                });
+                socket.on('expected_value', function (data) {
+                    console.log(data);
+                });
+                socket.on('stardard_deviation', function (data) {
+                    console.log(data);
+                });
 
 
 
