@@ -12,6 +12,7 @@ angular
   .module('estimatePiApp', [
     'ngRoute',
     'ngSanitize',
+     'tc.chartjs',
     'components'
   ])
   .config(function ($routeProvider) {

@@ -1,17 +1,13 @@
 <br>
-<form ng-submit="submit()">
-    <div class="form-group">
-        <input type="number" ng-model="text" name="text" placeholder="Enter Number" min="1" max="10000" required>
+<form ng-submit="submit()" class="form-group " role="form">
+        <input type="number" class="form-control" ng-model="text" placeholder="Enter Number" min="1" max="10000" autocomplete='off' required>
         <button type="submit" class="btn btn-default">Submit</button>
-    </div>
 </form>
-<!--
-<form ng-submit="submit()">
-<input type="text" ng-model="text" name="text" />
-  <input type="submit" id="submit" value="Submit" />
-  
-</form>
--->
+
+<canvas tc-chartjs-radar chart-options="options" chart-data="data" chart="chart" auto-legend></canvas>
+<pre>approximation = {{expected_value}}
+<br/>standard deviation ={{stardard_deviation}}
+</pre>
 
 <div class="row marketing">
     <h4>HTML5 Boilerplate</h4>
