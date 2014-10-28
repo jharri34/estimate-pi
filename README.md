@@ -16,14 +16,20 @@ pi = 4*M / N
 
 ###experiment #1: n = 100
 approximation = 3.139039999999993
+
+
 standard deviation =0.16266492676665165
 
 ###experiment #2 n = 1000
 approximation = 3.138731999999998
+
+
 standard deviation =0.05052880540840045
 
 ### experiment #3 n = 10000
 approximation = 3.141386800000004
+
+
 standard deviation =0.016880051710821277
 
 Frontend
