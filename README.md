@@ -42,7 +42,7 @@ Estimate frontend uses:
 * [Angular] - AngularJS is a toolset for building the framework most suited to your application development.
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [Chart.js] -Simple, clean and engaging charts for designers and developers
-* [jQuery] - duh 
+
 
 
 
@@ -102,5 +102,4 @@ THE SOFTWARE.
 [node.js]:http://nodejs.org
 [Twitter Bootstrap]:http://twitter.github.com/bootstrap/
 [Angular]:https://github.com/madrobby/keymaster
-[jQuery]:http://jquery.com
 [express]:http://expressjs.com
