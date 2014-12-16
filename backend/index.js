@@ -15,14 +15,16 @@ io.on('connection', function (socket) {
     socket.on('disconnect', function () {
         console.log('disconnected');
     });
-
+});
     socket.on('begin-approximation', function (msg) {
         var count = 0;
         var estimations = [];
         var expected_value = 0;
         var varience = 0;
         var stardard_deviation = 0;
-
+	if(msg > 10000){
+		msg=10000;
+	}
         for (var i = 0; i < 1000; i++) {
             for (var j = 0; j < msg; j++) {
                 var x = Math.random() * (1 - (-1)) + (-1);
@@ -45,9 +47,7 @@ io.on('connection', function (socket) {
         stardard_deviation = Math.sqrt(varience / 1000);
         io.emit('stardard_deviation', stardard_deviation);
 
-
     });
-});
 
 http.listen(3000, function () {
     console.log('listening on *:3000');
