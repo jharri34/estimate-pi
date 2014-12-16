@@ -34,7 +34,7 @@ standard deviation =0.016880051710821277
 
 
 ### live demo
-http://104.131.49.139:3000/#/
+http://jamallharris.me:3000/#/
 
 Frontend
 -----------
