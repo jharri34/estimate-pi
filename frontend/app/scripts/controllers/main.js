@@ -9,7 +9,7 @@
  */
 angular.module('estimatePiApp')
     .controller('MainCtrl', function ($scope, socket) {
-        
+
         $scope.estimates = [];
         $scope.chart = null;
 
@@ -100,7 +100,7 @@ angular.module('estimatePiApp')
             $scope.stardard_deviation=data;
         });
 
-        
+
 
 
     });
