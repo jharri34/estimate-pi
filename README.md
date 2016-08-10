@@ -34,7 +34,7 @@ standard deviation =0.016880051710821277
 
 
 ### live demo
-http://jamallharris.me:3000/#/
+https://thawing-beyond-86842.herokuapp.com/
 
 Frontend
 -----------
@@ -68,7 +68,7 @@ Installation
 ```sh
 git clone https://github.com/jharri34/estimate-pi.git
 cd estimate-pi
-npm install 
+npm install
 cd frontend && bower install && cd ../
 node backend/index.js
 
@@ -107,3 +107,9 @@ THE SOFTWARE.
 [Twitter Bootstrap]:http://twitter.github.com/bootstrap/
 [Angular]:https://github.com/madrobby/keymaster
 [express]:http://expressjs.com
+
+Resources
+----------
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+https://thawing-beyond-86842.herokuapp.com/
+https://dashboard.heroku.com/apps
